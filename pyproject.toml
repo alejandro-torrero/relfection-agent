@@ -1,0 +1,24 @@
+[project]
+name = "reflection-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alejandro Torrero", email = "alejandro@lostorrero.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.5.1",
+    "isort>=9.0.1",
+    "langchain>=1.3.18",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.11",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+reflection-agent = "reflection_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
